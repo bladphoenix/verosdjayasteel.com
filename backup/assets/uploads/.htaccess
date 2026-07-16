@@ -1,0 +1,8 @@
+# Folder upload: hanya untuk gambar. Cegah eksekusi skrip apa pun.
+php_flag engine off
+<IfModule mod_php.c>
+    php_admin_flag engine off
+</IfModule>
+<FilesMatch "\.(php|phtml|php3|php4|php5|php7|phps|pl|py|cgi|asp|aspx|sh|exe)$">
+    Require all denied
+</FilesMatch>
