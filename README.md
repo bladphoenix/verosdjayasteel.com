@@ -7,6 +7,8 @@ tanpa framework, mudah dihosting di cPanel/shared hosting.
 ## Fitur
 
 - **Frontend**
+  - Banner **"Website ini DIJUAL"** di atas semua halaman — tombol gabung (split button)
+    **Pesan via WhatsApp + Telegram**, ringkas satu baris di mobile, bisa ditutup pengunjung.
   - Beranda: hero, keunggulan, kategori, produk unggulan, tentang, CTA kontak.
   - Halaman katalog (`products.php`) dengan filter kategori + pencarian.
   - **Halaman detail produk** (`product.php`) — spesifikasi lengkap, deskripsi, produk terkait,

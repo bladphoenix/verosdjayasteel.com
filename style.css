@@ -93,13 +93,27 @@ ul { list-style: none; }
 }
 .forsale-bar__txt { flex: 1; min-width: 0; font-size: 13.5px; font-weight: 600; }
 .forsale-bar__txt strong { color: #7a2e00; }
-.forsale-bar__btn {
-  display: inline-flex; align-items: center; gap: 7px; flex-shrink: 0;
-  background: var(--wa); color: #fff; padding: 8px 15px; border-radius: 8px;
-  font-weight: 700; font-size: 13.5px; white-space: nowrap; transition: .15s;
-  box-shadow: 0 2px 8px rgba(0,0,0,.12);
+.forsale-bar__cta {
+  display: inline-flex; align-items: stretch; flex-shrink: 0;
+  border-radius: 8px; overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,.15);
 }
-.forsale-bar__btn:hover { background: var(--wa-dark); transform: translateY(-1px); }
+.forsale-bar__cta-wa { display: inline-flex; align-items: stretch; }
+.forsale-bar__cta-txt {
+  display: inline-flex; align-items: center;
+  background: #fff; color: var(--steel-900);
+  padding: 8px 13px; font-weight: 800; font-size: 13px; white-space: nowrap;
+  transition: .15s;
+}
+.forsale-bar__cta-wa:hover .forsale-bar__cta-txt { background: #eef2f6; }
+.forsale-bar__cta-ico {
+  display: inline-flex; align-items: center; justify-content: center;
+  padding: 8px 11px; color: #fff; font-size: 16px; transition: .15s;
+}
+.forsale-bar__cta-ico--wa { background: var(--wa); }
+.forsale-bar__cta-wa:hover .forsale-bar__cta-ico--wa { background: var(--wa-dark); }
+.forsale-bar__cta-ico--tg { background: var(--tg); border-left: 1px solid rgba(255,255,255,.45); }
+.forsale-bar__cta-ico--tg:hover { background: var(--tg-dark); }
 .forsale-bar__close {
   flex-shrink: 0; background: transparent; border: none; color: #3a2400;
   font-size: 24px; line-height: 1; cursor: pointer; padding: 0 2px; opacity: .65; transition: .15s;
@@ -108,12 +122,13 @@ ul { list-style: none; }
 .forsale-bar.hidden { display: none; }
 @keyframes fs-pulse { 0%,100% { transform: scale(1); } 50% { transform: scale(1.06); } }
 @media (max-width: 720px) {
+  .forsale-bar .container { gap: 8px; min-height: 38px; padding-top: 4px; padding-bottom: 4px; }
   .forsale-bar__tag { display: none; }
-  .forsale-bar__txt { font-size: 12.5px; }
-  .forsale-bar__btn { padding: 7px 12px; font-size: 12.5px; }
-}
-@media (max-width: 460px) {
-  .forsale-bar__txt strong { display: block; }
+  .forsale-bar__more { display: none; }
+  .forsale-bar__txt { font-size: 12.5px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .forsale-bar__cta-txt { padding: 6px 10px; font-size: 12px; }
+  .forsale-bar__cta-ico { padding: 6px 9px; font-size: 15px; }
+  .forsale-bar__cta-long { display: none; }
 }
 
 /* ---------- Top bar ---------- */

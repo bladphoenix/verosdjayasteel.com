@@ -27,7 +27,7 @@ $tgLink    = tg_link($settings['telegram']);
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=7">
+  <link rel="stylesheet" href="style.css?v=9">
 </head>
 <body>
 
@@ -35,8 +35,14 @@ $tgLink    = tg_link($settings['telegram']);
 <div class="forsale-bar" id="forsaleBar">
   <div class="container">
     <span class="forsale-bar__tag"><?php echo icon('star'); ?> DIJUAL</span>
-    <span class="forsale-bar__txt">Website ini <strong>DIJUAL</strong> — mau punya website profesional seperti ini untuk bisnis Anda?</span>
-    <a href="<?php echo e(wa_link($waNum, 'Halo, saya tertarik memiliki website seperti ' . ($_SERVER['HTTP_HOST'] ?? 'ini') . '. Boleh info harga & fiturnya?')); ?>" target="_blank" rel="noopener" class="forsale-bar__btn"><?php echo icon('whatsapp'); ?> Pesan Website Ini</a>
+    <span class="forsale-bar__txt">Website ini <strong>DIJUAL</strong><span class="forsale-bar__more"> — mau punya website profesional seperti ini untuk bisnis Anda?</span></span>
+    <div class="forsale-bar__cta">
+      <a href="<?php echo e(wa_link($waNum, 'Halo, saya tertarik memiliki website seperti ' . ($_SERVER['HTTP_HOST'] ?? 'ini') . '. Boleh info harga & fiturnya?')); ?>" target="_blank" rel="noopener" class="forsale-bar__cta-wa">
+        <span class="forsale-bar__cta-txt">Pesan<span class="forsale-bar__cta-long"> Website Ini</span></span>
+        <span class="forsale-bar__cta-ico forsale-bar__cta-ico--wa" aria-hidden="true"><?php echo icon('whatsapp'); ?></span>
+      </a>
+      <a href="<?php echo e($tgLink); ?>" target="_blank" rel="noopener" class="forsale-bar__cta-ico forsale-bar__cta-ico--tg" aria-label="Pesan via Telegram"><?php echo icon('telegram'); ?></a>
+    </div>
     <button class="forsale-bar__close" id="forsaleClose" type="button" aria-label="Tutup banner">&times;</button>
   </div>
 </div>
