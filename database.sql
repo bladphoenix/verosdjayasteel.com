@@ -135,10 +135,10 @@ CREATE TABLE IF NOT EXISTS `settings` (
 INSERT INTO `settings` (`setting_key`, `setting_value`) VALUES
   ('company_name', 'Veros Djaya Steel'),
   ('tagline', 'Spesialis Kandang Ayam Baja Galvanis Berkualitas'),
-  ('whatsapp', '6287821381136'),
+  ('whatsapp', '62859191749378'),
   ('telegram', '+6287821381136'),
   ('email', 'info@verosdjayasteel.com'),
-  ('phone', '0878-2138-1136'),
+  ('phone', '0859-1917-49378'),
   ('address', 'Jl. Industri Baja No. 1, Indonesia'),
   ('hero_title', 'Kandang Ayam Baja Galvanis Kuat, Awet & Anti Karat'),
   ('hero_subtitle', 'Produsen kandang ayam petelur, broiler, kampung, dan box DOC. Bahan galvanis berkualitas, harga pabrik, siap kirim seluruh Indonesia.'),

@@ -22,7 +22,7 @@ tanpa framework, mudah dihosting di cPanel/shared hosting.
 
 ## Kontak (default)
 
-- WhatsApp: <https://wa.me/6287821381136>
+- WhatsApp: <https://wa.me/62859191749378>
 - Telegram: <https://t.me/+6287821381136>
 
 Ubah kapan saja lewat **Admin → Pengaturan**.
